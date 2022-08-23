@@ -9,10 +9,10 @@ namespace Hamderber
 	{
 		switch (command)
 		{
-			case HELP:
+			case CommandType::HELP:
 
 				break;
-			case QUIT:
+			case CommandType::QUIT:
 				Command::Quit();
 				break;
 			default:
@@ -28,6 +28,6 @@ namespace Hamderber
 
 	void Command::UnknownCommand()
 	{
-		cout << "Unknown command. Type \"Help\" for available commands." << endl;
+		std::cout << "Unknown command. Type \"help\" for available commands." << std::endl;
 	}
 }

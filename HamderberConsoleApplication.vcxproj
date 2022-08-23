@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandHandler.cpp" />
     <ClCompile Include="HamderberConsoleApplication.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StringTools.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandHandler.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="StringTools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

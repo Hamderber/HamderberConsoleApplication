@@ -10,13 +10,13 @@ namespace Hamderber
 	class Command
 	{
 	public:
-		enum CommandType
+		enum class CommandType
 		{
 			HELP,
 			QUIT,
 			UNKNOWN
 		};
-		static void ExecuteCommand(CommandType command = UNKNOWN);
+		static void ExecuteCommand(CommandType command = CommandType::UNKNOWN);
 		static void Quit();
 	private:
 		static void UnknownCommand();
