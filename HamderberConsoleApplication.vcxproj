@@ -129,12 +129,10 @@
   <ItemGroup>
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="HamderberConsoleApplication.cpp" />
-    <ClCompile Include="includes.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h" />
-    <ClInclude Include="includes.h" />
     <ClInclude Include="Main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

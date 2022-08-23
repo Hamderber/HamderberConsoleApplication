@@ -1,7 +1,11 @@
-#include "includes.h"
+#pragma once
+#include <iostream>
+#include "Command.h"
+#include "Main.h"
 
 namespace Hamderber
 {
+
 	Main::Main()
 	{
 		Start();

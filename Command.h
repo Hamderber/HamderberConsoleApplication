@@ -1,5 +1,7 @@
 #pragma once
-#include "includes.h"
+#include <iostream>
+#include "Command.h"
+#include "Main.h"
 
 using namespace std;
 

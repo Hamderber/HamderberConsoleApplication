@@ -1,5 +1,7 @@
 #pragma once
-#include "includes.h"
+#include <iostream>
+#include "Command.h"
+#include "Main.h"
 
 namespace Hamderber
 {
@@ -21,7 +23,7 @@ namespace Hamderber
 
 	void Command::Quit()
 	{
-		//Main::ProgramRunning = false;
+		Main::ProgramRunning = false;
 	}
 
 	void Command::UnknownCommand()
