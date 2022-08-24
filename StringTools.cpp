@@ -1,18 +1,20 @@
 #pragma once
 #include <iostream>
+#include <algorithm>
 #include <string>
 #include "StringTools.h"
 
 namespace Hamderber
 {
-	std::string ToLower(std::string string)
+	std::string StringTools::ToLower(std::string string)
 	{
+		transform(string.begin(), string.end(), string.begin(), ::tolower);
+		return string;
+	}
 
-		/*for (auto x : string)
-		{
-			string[x] = tolower(string[x]);
-		}*/
-		std::cout << string << std::endl;
-		return std::string();
+	std::string StringTools::ToUpper(std::string string)
+	{
+		transform(string.begin(), string.end(), string.begin(), ::toupper);
+		return string;
 	}
 }

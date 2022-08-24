@@ -7,6 +7,7 @@
 namespace Hamderber
 {
 	bool Main::ProgramRunning = false;
+	
 
 	Main::Main()
 	{
@@ -31,8 +32,8 @@ namespace Hamderber
 		while (ProgramRunning)
 		{
 			std::cout << "Enter a command: ";
-			std::string input;
-			std::cin >> input;
+			char input[CommandHandler::MaxCommandLength];
+			std::cin.getline(input, CommandHandler::MaxCommandLength);
 			CommandHandler::InterpretCommand(input);
 			Command::ExecuteCommand();
 			Command::Quit();

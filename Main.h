@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Command.h"
 #include "Main.h"
+#include "CommandHandler.h"
 
 namespace Hamderber
 {

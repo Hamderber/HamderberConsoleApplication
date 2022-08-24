@@ -10,7 +10,7 @@ namespace Hamderber
 	class Command
 	{
 	public:
-		enum class CommandType
+		enum class CommandType: int
 		{
 			HELP,
 			QUIT,

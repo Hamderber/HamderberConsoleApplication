@@ -6,13 +6,31 @@
 
 namespace Hamderber
 {
+	CommandHandler::CommandHandler()
+	{
+		BuildCommands();
+	}
+
+	CommandHandler::~CommandHandler()
+	{
+
+	}
+
 	void CommandHandler::ExecuteCommand()
 	{
 
 	}
 	void CommandHandler::InterpretCommand(std::string input)
 	{
+		input = StringTools::ToLower(input);
 		std::cout << "Command recieved: " << input << std::endl;
-		StringTools::ToLower(input);
+	}
+
+	void CommandHandler::BuildCommands()
+	{
+		/*for (auto e : Command::CommandType)
+		{
+
+		}*/
 	}
 }
